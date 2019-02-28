@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body>
+<a href="{% url 'contacts' %}">Add new contact</a>
+
+{% for contacts in contactform %}
+
+<p><a href="{% url 'edit' contacts.id %}">
+    {{ contacts.name }}</a></p>
+<p>{{ contacts.email }}</p>
+<p>{{ contacts.number }}</p>
+<p><a href="{% url 'delete' contacts.id %}">Delete User</a> </p>
+<hr/>
+{% endfor %}
+</body>
+</html>
