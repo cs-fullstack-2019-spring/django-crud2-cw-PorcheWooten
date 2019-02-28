@@ -9,7 +9,7 @@ def index(request):
     allcontacts = Contacts.objects.all()
     return render(request, 'contactsApp/index.html', {'contactform': allcontacts})
 
-
+# add new contact
 def contacts(request):
     new_contact = NewContactForm(request.POST or None)
     if new_contact.is_valid():

@@ -6,9 +6,9 @@
 </head>
 <body>
 <a href="{% url 'contacts' %}">Add new contact</a>
-
+<!--iterate through contact list-->
 {% for contacts in contactform %}
-
+<!--list contact with options of edit and delete-->
 <p><a href="{% url 'edit' contacts.id %}">
     {{ contacts.name }}</a></p>
 <p>{{ contacts.email }}</p>
