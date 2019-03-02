@@ -1,3 +1,6 @@
+### POINTS: 2
+### KEY: Well done!
+
 # Django CRUD 2 cw
 
 Create a simple CRUD application to manage contacts. Each contact should have:
